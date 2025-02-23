@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "LeetCode Stealth Mode",
+  "version": "1.0",
+  "description": "Hides LeetCode branding elements",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.leetcode.com/*"],
+      "css": ["stealth.css"],
+      "js": ["stealth.js"]
+    }
+  ]
+}

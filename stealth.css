@@ -1,0 +1,24 @@
+/* Hide the LeetCode logo in the navbar - using visibility instead of display */
+.navbar-brand-container,
+.leetcode-logo,
+svg[class*="logo"],
+[class*="logo"] svg {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Hide any SVG elements that might be part of the logo */
+svg[width="95"],
+svg[height="111"],
+svg[viewBox*="0 0 95 111"],
+svg path[fill-rule="evenodd"],
+svg path[clip-rule="evenodd"] {
+  visibility: hidden !important;
+  opacity: 0 !important;
+}
+
+/* Ensure layout structure remains intact */
+.navbar-brand-container {
+  width: auto !important;
+  min-width: 0 !important;
+}
